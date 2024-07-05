@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 if (email.getText().toString().trim().equals("")) {
                     email.setError("Email Id Required !");
                 }
-                else if (email.getText().toString().trim().matches(emailPattern)) {
+                else if (!email.getText().toString().trim().matches(emailPattern)) {
                     email.setError("Valid Email Id Required !");
                     
                 }
