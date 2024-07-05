@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 else if (password.getText().toString().trim().equals("")) {
                     password.setError("Password Required !");
                 }
-                else if (password.getText().toString().trim().length()>6) {
+                else if (password.getText().toString().trim().length()<6) {
                     password.setError("Minimum 6 char Required !");
 
                 }
