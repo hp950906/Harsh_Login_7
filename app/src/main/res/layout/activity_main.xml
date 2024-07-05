@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/white"
+
     tools:context=".MainActivity"
    >
     
@@ -39,7 +39,8 @@
 
 
       <EditText
-          android:padding="@dimen/_10sdp"
+          android:id="@+id/main_emial"
+          android:padding="@dimen/_8sdp"
           android:background="@drawable/custom_border"
           android:drawableLeft="@drawable/email"
           android:drawablePadding="@dimen/_10sdp"
@@ -54,6 +55,7 @@
 
 
     <EditText
+        android:id="@+id/main_password"
         android:padding="@dimen/_10sdp"
         android:background="@drawable/custom_border"
         android:drawableLeft="@drawable/padlock"
