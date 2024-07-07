@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button login;
     EditText email, password;
+    TextView forgotpassword,creatAccount;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     @Override
@@ -35,6 +37,29 @@ public class MainActivity extends AppCompatActivity {
         View button = findViewById(R.id.button_);
          email = findViewById(R.id.main_emial);
          password = findViewById(R.id.main_password);
+         forgotpassword = findViewById(R.id.main_forget_password);
+         creatAccount = findViewById(R.id.main_creat_account);
+
+         forgotpassword.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+
+                 Intent intent = new Intent(MainActivity.this,ForgetPasswordActivity.class);
+                 startActivity(intent);
+
+
+             }
+         });
+
+         creatAccount.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+
+                 Intent intent = new Intent(MainActivity.this,SignUpActivity.class);
+                 startActivity(intent);
+
+             }
+         });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     Toast.makeText(getApplicationContext(), "Sign up sucessfully", Toast.LENGTH_SHORT).show();
                     Snackbar.make(view, "You Are Logged In", Snackbar.LENGTH_LONG).show();
-                    Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                     ;
                     startActivity(intent);
                 }

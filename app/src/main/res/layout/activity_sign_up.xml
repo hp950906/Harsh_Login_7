@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_gravity="center"
+        style="@style/text_20"
+        android:text="Creat Account"
+        android:textStyle="bold"
+        android:textSize="@dimen/_30sdp"
+        android:textColor="#1E41BB"
+        android:fontFamily="sans-serif-black"
+
+        />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        style="@style/text_20"
+        android:text="Creat an account so you can\n explore all things.!."
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="sans-serif-black"
+
+        />
+
+    <EditText
+        android:id="@+id/signup_name"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/custom_border"
+        android:drawablePadding="@dimen/_10sdp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <EditText
+        android:id="@+id/signup_contact"
+        android:maxLength="10"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/custom_border"
+        android:drawablePadding="@dimen/_10sdp"
+        android:inputType="phone"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Contact no."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/custom_border"
+        android:drawablePadding="@dimen/_10sdp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/custom_border"
+        android:drawablePadding="@dimen/_10sdp"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <EditText
+        android:id="@+id/signup_confirm_password"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/custom_border"
+        android:drawablePadding="@dimen/_10sdp"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:hint="Confirm Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/signup_button_"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_button"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Sign Up"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <TextView
+        android:id="@+id/signup_already_have_account"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account !"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+</LinearLayout>
