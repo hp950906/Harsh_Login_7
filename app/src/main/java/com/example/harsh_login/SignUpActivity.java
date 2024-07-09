@@ -14,19 +14,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class SignUpActivity extends AppCompatActivity {
+        public class SignUpActivity extends AppCompatActivity {
 
-    EditText name,contact,email,password,confirmPassword;
-    Button Signup;
-    TextView alreadyAccount;
-    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+            EditText name,contact,email,password,confirmPassword;
+            Button Signup;
+            TextView alreadyAccount;
+            String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_sign_up);
-
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState);
+                EdgeToEdge.enable(this);
+                setContentView(R.layout.activity_sign_up);
         name = findViewById(R.id.signup_name);
         contact = findViewById(R.id.signup_contact);
         email = findViewById(R.id.signup_email);

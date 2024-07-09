@@ -84,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Sign up sucessfully", Toast.LENGTH_SHORT).show();
                     Snackbar.make(view, "You Are Logged In", Snackbar.LENGTH_LONG).show();
                     Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                    ;
                     startActivity(intent);
                 }
 
