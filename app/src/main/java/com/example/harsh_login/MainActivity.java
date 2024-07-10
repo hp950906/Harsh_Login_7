@@ -3,9 +3,11 @@ package com.example.harsh_login;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     EditText email, password;
     TextView forgotpassword,creatAccount;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    ImageView hide,show;
 
     @Override
 
@@ -39,6 +42,34 @@ public class MainActivity extends AppCompatActivity {
          password = findViewById(R.id.main_password);
          forgotpassword = findViewById(R.id.main_forget_password);
          creatAccount = findViewById(R.id.main_creat_account);
+
+
+         hide = findViewById(R.id.main_password_hide);
+         show = findViewById(R.id.main_password_show);
+
+
+         hide.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                hide.setVisibility(View.GONE);
+                show.setVisibility(View.VISIBLE);
+                password.setTransformationMethod(null);
+
+
+             }
+         });
+
+         show.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 hide.setVisibility(View.VISIBLE);
+                 show.setVisibility(View.GONE);
+                 password.setTransformationMethod(new PasswordTransformationMethod());
+
+
+
+             }
+         });
 
          forgotpassword.setOnClickListener(new View.OnClickListener() {
              @Override
